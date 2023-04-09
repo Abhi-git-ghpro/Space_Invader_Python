@@ -130,16 +130,9 @@ while running:
         if event.type == pygame.KEYUP:
             if event.key == pygame.K_LEFT or event.key == pygame.K_RIGHT:
                 playerX_change = 0
-            # elif ((event.key == pygame.K_RIGHT)):
-            #         playerX_change = -0.3
-            # elif ((event.key == pygame.K_LEFT)):
-            #         playerX_change = 0.3
-            # else:
-            #     playerX_change = 0
 
-    # 0.3 = 0.3 + -0.1 -> 0.3 = 0.3 - 0.1
-    # 0.3 = 0.3 + 0.1
 
+    
     playerX += playerX_change
     if playerX <= 0:
         playerX = 0
