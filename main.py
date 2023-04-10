@@ -148,6 +148,7 @@ while running:
         if enemyY[i] > 440:
             for j in range(num_of_enemies):
                 enemyY[j] = 2000
+            mixer.music.stop()
             game_over_text()
             break
 
@@ -184,3 +185,5 @@ while running:
     player(playerX, playerY)
     show_score(textX, testY)
     pygame.display.update()
+
+
