@@ -148,6 +148,7 @@ while running:
         if enemyY[i] > 440:
             for j in range(num_of_enemies):
                 enemyY[j] = 2000
+            #Stop the music after the game is over
             mixer.music.stop()
             game_over_text()
             break
